@@ -15,4 +15,5 @@ function IdCard(props){
         </div>
     )
 }
+//si hubiera puesto solo birth me daria un error pues es considerado un objeto. React no permite pintar un objeto por defecto.
 export default IdCard;

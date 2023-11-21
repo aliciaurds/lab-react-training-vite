@@ -1,4 +1,5 @@
 function Rating({children}){
+  // const {children} = props.children; lo que pasa internamente
     let roundChildren = Math.round(children);
     let stars;
   if (roundChildren === 0) {
@@ -19,3 +20,17 @@ function Rating({children}){
     )
 }
 export default Rating;
+//otra solución:
+// function Rating(props) {
+//   const number = Math.round(props.children);
+//   const starRatingUp = "★".repeat(number);
+//   const starRatingDown = "☆".repeat(5 - number);
+//   return (
+//     <div>
+//       {starRatingUp}
+//       {starRatingDown}
+//     </div>
+//   );
+// }
+
+// export default Rating;
