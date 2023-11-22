@@ -7,6 +7,11 @@ import CreditCard from "./components/CredictCard";
 import Rating from "./components/Rating";
 import DriverCard from "./components/DriverCard";
 import LikeButton from "./components/LikeButton";
+import ClickablePicture from "./components/ClickablePicture";
+import mypic from "./assets/images/ERPR7897.jpg";
+import mypic2 from "./assets/images/thugLife.jpg";
+import Dice from "./components/Dice";
+import Carousel from "./components/Carousel";
 function App() {
   return (
     <div className="App">
@@ -97,6 +102,17 @@ function App() {
         }}
       />
       <LikeButton />
+      <ClickablePicture img={mypic} imgClicked={mypic2} />
+      {/* // ?cargar imagenes de manera local -- importar */}
+      <Dice />
+      <Carousel
+        images={[
+          "https://randomuser.me/api/portraits/women/1.jpg",
+          "https://randomuser.me/api/portraits/men/1.jpg",
+          "https://randomuser.me/api/portraits/women/2.jpg",
+          "https://randomuser.me/api/portraits/men/2.jpg",
+        ]}
+      />
     </div>
   );
 }
